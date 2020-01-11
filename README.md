@@ -14,7 +14,7 @@ For this specific implementation of Kayles:
 
 ## The Challenge
 
-* Build a [single-elimination tournament](https://en.wikipedia.org/wiki/Single-elimination_tournament) layer on top of the existing Kayles implementation. You can assume that only 2^X players will be in a given tournament, but the specific number should be easy to change in your code. The app should select the players that play next, and each player should play once in each round. Note that we're not looking for a complicated tournament structure here -- a straightforward solution is preferred.
+* Build a [single-elimination tournament](https://en.wikipedia.org/wiki/Single-elimination_tournament) layer on top of the existing Kayles implementation. You can assume that only 2^X players will be in a given tournament. The app should select the players that play next, and each player should play once in each round. 
 * When a tournament is over, display who won in an `alert`.
 
 
