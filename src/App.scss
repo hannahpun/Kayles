@@ -1,0 +1,84 @@
+$black: #273746;
+$blue : #2980B9;
+body{
+  color: $black;
+  background-color: #eee;
+}
+.App {
+  text-align: center;
+}
+h1{
+  font-size: 20px;
+  margin: 0;
+  padding: 15px;
+}
+.SubTitle{
+  color: white;
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 15px;
+  padding: 5px 15px;
+  background-color: $black;
+}
+h3{
+  margin: 0;
+  font-size: 30px;
+}
+.Header{
+  background-color: $black;
+  color: white;
+  padding: 15px;
+}
+
+// Board
+.Board{
+  padding: 30px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // background-color: #fff;
+}
+.Pin {
+  display: inline-block;
+  // flex: 1;
+  height: 100px;
+  width: 30px;
+  border-radius: 3px;
+  text-align: center;
+  background: $blue;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.Pin.SelectedForRemoval {
+  background: $black;
+}
+
+.Pin.Removed {
+  background: #ddd;
+}
+
+.btn{
+  margin-top: 30px;
+  border: 2px solid $black;
+  width: 100%;
+  line-height: 30px;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  &:disabled{
+    border-color: #ccc;
+    color: #ccc;
+    cursor: default;
+    &:hover{
+      background-color: transparent;
+    }
+  }
+  &:hover{
+    background-color: white;
+  }
+}
+

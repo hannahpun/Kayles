@@ -1,0 +1,31 @@
+$blue : #2980B9;
+$black: #273746;
+.Round{
+  box-shadow: 5px 0px 3px #bbb;
+  padding: 15px;
+  background-color: white;
+}
+.Player{
+  display: inline-block;
+  min-width: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  color: lighten($black, 30);
+  margin: 10px 5px 0 5px;
+  padding-bottom: 3px;
+  line-height: 20px;
+  &.Player-status1{
+    // border-bottom: 3px solid $blue;
+    background-color: $black;
+    color: white;
+  }
+  &.Player-status2{
+    color: $black;
+    font-weight: bold;
+    // border: 1px solid $blue;
+    // opacity: 0.6;
+  }
+  &.Player-status3{
+    color: #ddd;
+  }
+}
